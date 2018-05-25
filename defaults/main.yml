@@ -1,0 +1,8 @@
+---
+# defaults file for traefik
+traefix_ver: v1.6.2
+traefik_platform: linux-amd64
+
+traefik_mirror: https://github.com/containous/traefik/releases/download
+
+traefik_install_bin_dir: /usr/local/bin
