@@ -1,6 +1,6 @@
 ---
 # defaults file for traefik
-traefik_ver: v1.6.2
+traefik_ver: v1.6.4
 traefik_platform: linux-amd64
 
 traefik_mirror: https://github.com/containous/traefik/releases/download
