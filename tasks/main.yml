@@ -15,6 +15,7 @@
   get_url:
     url: '{{traefik_url}}'
     dest: '{{traefik_fq_target_bin}}'
+    checksum: '{{traefik_checksum}}'
     mode: 0755
 - name: link...
   become: yes

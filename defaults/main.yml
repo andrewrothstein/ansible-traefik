@@ -1,8 +1,23 @@
 ---
 # defaults file for traefik
-traefik_ver: v1.6.4
+traefik_ver: v1.7.4
 traefik_platform: linux-amd64
 
 traefik_mirror: https://github.com/containous/traefik/releases/download
+traefik_checksums:
+  v1.7.4:
+    darwin-386: sha256:08a189c03322e9979fd63b53272a3eda350cdb7850402126ba94bfbf1f9b7c72
+    darwin-amd64: sha256:1f19be55c50277b1f50f9969cc85c062f8072670709c7125336a5a0cc22b17f8
+    freebsd-386: sha256:c2bc535794d2ebae70c7daa26ca7f2032bb2fea1b53b5ae2b89b4e43fcafcfb0
+    freebsd-amd64: sha256:d8d93db91240b7c865fa08da68e49ac34ac2d93913a95a6be7d7beff6c1ac83c
+    linux-386: sha256:00bcac836186161d8bb432d0893744f1b0d515728a0595ec58f9478b26ca7f1f
+    linux-amd64: sha256:5d7d779657a7bdf5c3b81a15f547d994121e773a9139930d918b6fe5a6eb1a0e
+    linux-arm64: sha256:f88ce489e611ae58addb4e10e0d20267fee22f09fd67e2304c6f2fd9ac5ee12a
+    linux-arm: sha256:ac60307b28409a9027adee47f1acecdc11892128030cdb1f53bb9d5849f0c5c2
+    openbsd-386: sha256:2e0b23ab8491ccff02ed3747a24d76ab92f8cc98bb64f6104d2063d78557a37a
+    openbsd-amd64: sha256:dcea867325a770b29c409f81154a2802eb07c572fb93a755e6f512b422af5c9c
+    windows-386: sha256:dc2fdddb75cc06bbafbdd496fd0f2ad837b8bf29c37e4ec6084494e04ca8bb3d
+    windows-amd64: sha256:10726dedbab776d8621b59e6233f1d6e7a9e7fae43ff3080eac1846b148ab814
+
 
 traefik_install_bin_dir: /usr/local/bin
