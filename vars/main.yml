@@ -1,9 +1,9 @@
 ---
 # vars file for traefik
-traefik_src_bin: traefik_{{traefik_platform}}
-traefik_url: '{{traefik_mirror}}/{{traefik_ver}}/{{traefik_src_bin}}'
-traefik_checksum: '{{traefik_checksums[traefik_ver][traefik_platform]}}'
+traefik_src_bin: traefik_{{ traefik_platform }}
+traefik_url: '{{ traefik_mirror }}/{{ traefik_ver }}/{{ traefik_src_bin }}'
+traefik_checksum: '{{ traefik_checksums[traefik_ver][traefik_platform] }}'
 
-traefik_target_bin: traefik_{{traefik_platform}}_{{traefik_ver}}
-traefik_fq_target_bin: '{{traefik_install_bin_dir}}/{{traefik_target_bin}}'
-traefik_fq_target_link: '{{traefik_install_bin_dir}}/traefik'
+traefik_target_bin: traefik_{{ traefik_platform }}_{{ traefik_ver }}
+traefik_fq_target_bin: '{{ traefik_install_bin_dir }}/{{ traefik_target_bin }}'
+traefik_fq_target_link: '{{ traefik_install_bin_dir }}/traefik'
