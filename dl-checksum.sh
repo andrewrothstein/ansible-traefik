@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=v1.7.6
+VER=v1.7.12
 DIR=~/Downloads
 MIRROR=https://github.com/containous/traefik/releases/download/$VER
 
@@ -8,7 +8,14 @@ dl()
     OS=$1
     PLATFORM=$2
     SUFFIX=${3:-}
-    wget -O $DIR/traefik_$OS-$PLATFORM-$VER$SUFFIX $MIRROR/traefik_$OS-$PLATFORM$SUFFIX
+    OSP=${OS}-${PLATFORM}
+    URL=$MIRROR/traefik_$OSP$SUFFIX
+    FILE=$DIR/traefik_$OSP-$VER$SUFFIX
+    if [ ! -e $FILE ]
+    then
+        wget -q -O $FILE $URL
+    fi
+    printf "# %s\n%s: sha256:%s\n" $URL $OSP `sha256sum $FILE | awk '{print $1}'`
 }
 
 dl darwin 386
@@ -23,5 +30,5 @@ dl openbsd 386
 dl openbsd amd64
 dl windows 386 .exe
 dl windows amd64 .exe
-sha256sum $DIR/traefik_*-$VER*
+
 

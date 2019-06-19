@@ -1,6 +1,6 @@
 ---
 # defaults file for traefik
-traefik_ver: v1.7.6
+traefik_ver: v1.7.12
 traefik_platform: linux-amd64
 
 traefik_mirror: https://github.com/containous/traefik/releases/download
@@ -44,5 +44,30 @@ traefik_checksums:
     openbsd-amd64: sha256:4fa50a7c95fe0739f7eaf60688add8c2fcaaaca81c31125617690043bd023356
     windows-386.exe: sha256:ca7fdac234e85c22fb1fa6d0e577ce95fe06f3a32385022ffcce67c41cbf736a
     windows-amd64.exe: sha256:4c5c00b0987ac081412219095c8e98186dd77440482f3a1894153f4acb1c35ac
+  v1.7.12:
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_darwin-386
+    darwin-386: sha256:898145bd2e482d778b32e3ab3e7da48e863a2850d7dbb1a6d9ff42872f6da040
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_darwin-amd64
+    darwin-amd64: sha256:e843c241c5a3c0fa9b10bbc88db8b1cf648300c64d2711459fd99df4027a7d26
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_freebsd-386
+    freebsd-386: sha256:da538640b38e19bae1b5a2051922d567c5d2bdea8c42929b52a3c9ef53bde7bb
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_freebsd-amd64
+    freebsd-amd64: sha256:67cc33d15598cbfcb674b57438a737327b0305b5c599cefc74fdb3ac9e2ae815
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_linux-386
+    linux-386: sha256:0db2bb9d641052b2eb20dfe17ade1019298357a411994f39f89744df1c4e24e1
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_linux-amd64
+    linux-amd64: sha256:091c89452aecf10f7d6c586afc23803be350535510b171aa974f0d17d42db329
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_linux-arm
+    linux-arm: sha256:43422b9187c028268d07fd913c74dab7bbb187bd71e1c1011b6d636bc912bc25
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_linux-arm64
+    linux-arm64: sha256:6b0eb5ff2a353a41147b7620395c3c4a8899df3287a33dc3df6b4954a6dd171f
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_openbsd-386
+    openbsd-386: sha256:f2d2fb850f5777fe03edb89b59c28d9db0400ca5c79bddc36d88b7730b9e38d3
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_openbsd-amd64
+    openbsd-amd64: sha256:67ca1829cf551ffcb2772a392d48025039af12f163065b9abaa71fa5d3aeea2a
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_windows-386.exe
+    windows-386: sha256:26e091e903c6d1600928e090034e744b10870fcbe59f16ab0fea1448bccde014
+    # https://github.com/containous/traefik/releases/download/v1.7.12/traefik_windows-amd64.exe
+    windows-amd64: sha256:eed06b953dc4f163b2a6bbe683028898920e097ada9a40902dbe962b10b01b23
 
 traefik_install_bin_dir: /usr/local/bin
