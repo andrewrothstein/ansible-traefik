@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=v1.7.12
+VER=${1:-v1.7.14}
 DIR=~/Downloads
 MIRROR=https://github.com/containous/traefik/releases/download/$VER
 
@@ -15,9 +15,11 @@ dl()
     then
         wget -q -O $FILE $URL
     fi
-    printf "# %s\n%s: sha256:%s\n" $URL $OSP `sha256sum $FILE | awk '{print $1}'`
+    printf "    # %s\n" $URL
+    printf "    %s: sha256:%s\n" $OSP `sha256sum $FILE | awk '{print $1}'`
 }
 
+printf "  %s:\n" $VER
 dl darwin 386
 dl darwin amd64
 dl freebsd 386
