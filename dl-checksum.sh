@@ -1,22 +1,22 @@
 #!/usr/bin/env sh
-VER=${1:-v1.7.14}
+VER=${1:-v1.7.16}
 DIR=~/Downloads
 MIRROR=https://github.com/containous/traefik/releases/download/$VER
 
 dl()
 {
     OS=$1
-    PLATFORM=$2
+    ARCH=$2
     SUFFIX=${3:-}
-    OSP=${OS}-${PLATFORM}
-    URL=$MIRROR/traefik_$OSP$SUFFIX
-    FILE=$DIR/traefik_$OSP-$VER$SUFFIX
+    PLATFORM=${OS}-${ARCH}
+    URL=$MIRROR/traefik_$PLATFORM$SUFFIX
+    FILE=$DIR/traefik_$PLATFORM-$VER$SUFFIX
     if [ ! -e $FILE ]
     then
         wget -q -O $FILE $URL
     fi
     printf "    # %s\n" $URL
-    printf "    %s: sha256:%s\n" $OSP `sha256sum $FILE | awk '{print $1}'`
+    printf "    %s: sha256:%s\n" $PLATFORM `sha256sum $FILE | awk '{print $1}'`
 }
 
 printf "  %s:\n" $VER
