@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=${1:-v1.7.16}
+VER=${1:-v1.7.17}
 DIR=~/Downloads
 MIRROR=https://github.com/containous/traefik/releases/download/$VER
 
