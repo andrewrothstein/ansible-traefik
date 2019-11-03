@@ -1,4 +1,11 @@
 ---
 - hosts: all
   roles:
-    - role: '{{playbook_dir}}'
+    - role: '{{ playbook_dir }}'
+      traefik_major_ver: 1
+      traefik_minor_ver: 7
+      traefik_patch_ver: 17
+    - role: '{{ playbook_dir }}'
+      traefik_major_ver: 2
+      traefik_minor_ver: 0
+      traefik_patch_ver: 1
