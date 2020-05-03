@@ -1,21 +1,24 @@
 ---
 # vars file for traefik
 
-traefik_ver: 'v{{ traefik_major_ver }}.{{ traefik_minor_ver }}.{{ traefik_patch_ver }}'
-traefik_conjuction: '{% if traefik_major_ver | int >= 2 %}_{% else %}-{% endif %}'
+traefik_ver_fmt: 'v{{ traefik_ver.major }}.{{ traefik_ver.minor }}.{{ traefik_ver.patch }}'
+traefik_conjuction: '{% if traefik_ver.major | int >= 2 %}_{% else %}-{% endif %}'
 traefik_platform: '{{ traefik_os }}{{ traefik_conjuction }}{{ traefik_arch }}'
 
 traefik_remote_item_v1: traefik_{{ traefik_platform }}{{ traefik_suffix | default("") }}
-traefik_archive: traefik_{{ traefik_ver }}_{{ traefik_platform }}.{{ traefik_archive_type | default("tar.gz") }}
-traefik_remote_item: '{% if traefik_major_ver | int >= 2 %}{{ traefik_archive }}{% else %}{{ traefik_remote_item_v1 }}{% endif %}'
-traefik_url: '{{ traefik_mirror }}/{{ traefik_ver }}/{{ traefik_remote_item }}'
-traefik_checksum: '{{ traefik_checksums[traefik_ver][traefik_platform] }}'
+traefik_archive: traefik_{{ traefik_ver_fmt }}_{{ traefik_platform }}.{{ traefik_archive_type | default("tar.gz") }}
+traefik_remote_item: '{% if traefik_ver.major | int >= 2 %}{{ traefik_archive }}{% else %}{{ traefik_remote_item_v1 }}{% endif %}'
+traefik_url: '{{ traefik_mirror }}/{{ traefik_ver_fmt }}/{{ traefik_remote_item }}'
+traefik_checksum: '{{ traefik_checksums[traefik_ver_fmt][traefik_platform] }}'
 
 # for v2+...
 
-traefik_install_dir: '{{ traefik_parent_install_dir }}/traefik-{{ traefik_ver }}'
+traefik_install_dir: '{{ traefik_parent_install_dir }}/traefik-{{ traefik_ver_fmt }}'
 traefik_install_bin_dir: '{{ traefik_parent_install_dir }}/bin'
 
-traefik_v1_target_bin: '{{ traefik_install_bin_dir }}/traefik_{{ traefik_platform }}_{{ traefik_ver }}'
-traefik_v2_target_bin: '{{ traefik_install_dir }}/traefik'
+traefik_target_bins:
+  '1': '{{ traefik_install_bin_dir }}/traefik_{{ traefik_platform }}_{{ traefik_ver_fmt }}'
+  '2': '{{ traefik_install_dir }}/traefik'
+
+traefik_target_bin: '{{ traefik_target_bins[traefik_ver.major] }}'
 traefik_fq_target_link: '{{ traefik_install_bin_dir }}/traefik'

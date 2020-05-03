@@ -4,13 +4,13 @@
   become_user: root
   get_url:
     url: '{{ traefik_url }}'
-    dest: '{{ traefik_v1_target_bin }}'
+    dest: '{{ traefik_target_bin }}'
     checksum: '{{ traefik_checksum }}'
     mode: 0755
 - name: link...
   become: yes
   become_user: root
   file:
-    src: '{{ traefik_v1_target_bin }}'
+    src: '{{ traefik_target_bin }}'
     dest: '{{ traefik_fq_target_link }}'
     state: link

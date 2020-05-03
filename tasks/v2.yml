@@ -29,7 +29,7 @@
         remote_src: yes
         src: /tmp/{{ traefik_archive }}
         dest: '{{ traefik_install_dir }}'
-        creates: '{{ traefik_v2_target_bin }}'
+        creates: '{{ traefik_target_bin }}'
   always:
     - name: cleanup
       become: yes
@@ -41,6 +41,6 @@
   become: yes
   become_user: root
   file:
-    src: '{{ traefik_v2_target_bin }}'
+    src: '{{ traefik_target_bin }}'
     dest: '{{ traefik_fq_target_link }}'
     state: link
