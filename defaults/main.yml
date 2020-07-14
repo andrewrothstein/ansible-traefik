@@ -3,7 +3,7 @@
 traefik_ver:
   major: 2
   minor: 2
-  patch: 4
+  patch: 5
 
 traefik_os: linux
 traefik_arch: amd64
@@ -686,3 +686,33 @@ traefik_checksums:
     windows_386: sha256:0a6fc03d88aa0c8d62c2a7ea2a55e4bf272dcf950a1281b6bb087a4f161ded91
     # https://github.com/containous/traefik/releases/download/v2.2.4/traefik_v2.2.4_windows_amd64.zip
     windows_amd64: sha256:51523e3c58d38029638f60894b41f7540a87000c2e5676a5d708cf611f958814
+  # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_checksums.txt
+  v2.2.5:
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_darwin_amd64.tar.gz
+    darwin_amd64: sha256:6d48aa21ccca89be805873874d89677411c0ccb522ca88a62d80a635cceb550a
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_freebsd_386.tar.gz
+    freebsd_386: sha256:8dae8ac4203947464527d5bb7df07e5a7ac8ffd66406f59e01fbba2db77aa1f4
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_freebsd_amd64.tar.gz
+    freebsd_amd64: sha256:b5e8fe3d5cf437669c28bff77083e970610785b4f14cec89bd2d7bf0dc9eb354
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_linux_386.tar.gz
+    linux_386: sha256:d0d2d52391c957b493eb9f982e0ad873df5163295bcaecb1a20229bf99902499
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_linux_amd64.tar.gz
+    linux_amd64: sha256:81e8bf71ef2560363ed0b8ce7b7ddeafb9dd513f3e3266d6ecb8fc373cc3cc13
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_linux_arm64.tar.gz
+    linux_arm64: sha256:44552f41dc4829444a6de4ffb6c66d6c9035bb7809d226a2c5366dcf80748f6a
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_linux_armv5.tar.gz
+    linux_armv5: sha256:0ce602b92ca100e569ef97344128c3b49949e53503e3222246f0f2c831a122dd
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_linux_armv6.tar.gz
+    linux_armv6: sha256:3c381c1b25f281a37bad0fd72a4083088b892e6d94ae18dad93b58bd3623bb3a
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_linux_armv7.tar.gz
+    linux_armv7: sha256:aaa0e915e409b1a03a328139666c1b46ef8a5dfae480f5b57eb4ec2eb7afe794
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:3a80999492d75ac9dff53e1c81aacc3cce79f4e73be909bc8317dd7ab515c579
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_openbsd_386.tar.gz
+    openbsd_386: sha256:ae6904c0fcdaf11c86a294c6e9a6d0f534e477b79a07f4fa5a09018745c206f8
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_openbsd_amd64.tar.gz
+    openbsd_amd64: sha256:ee5ff651e47a2a9fec6b8d39b4274a16f6a7f9af1c23f6747b6ae2973f9f8ac7
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_windows_386.zip
+    windows_386: sha256:ecd12b8e7a5f603c64d412d1e33bc17893ae90333351592bd8bde149ee044d55
+    # https://github.com/containous/traefik/releases/download/v2.2.5/traefik_v2.2.5_windows_amd64.zip
+    windows_amd64: sha256:4a15c7a2c36642ab530b650a395ff7a489d8e23775efc32e6d1c02be157c5465
