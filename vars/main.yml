@@ -7,6 +7,7 @@ traefik_platform: '{{ traefik_os }}{{ traefik_conjuction }}{{ traefik_arch }}'
 
 traefik_remote_item_v1: traefik_{{ traefik_platform }}{{ traefik_suffix | default("") }}
 traefik_archive: traefik_{{ traefik_ver_fmt }}_{{ traefik_platform }}.{{ traefik_archive_type | default("tar.gz") }}
+traefik_tmp_archive: /tmp/{{ traefik_archive }}
 traefik_remote_item: '{% if traefik_ver.major | int >= 2 %}{{ traefik_archive }}{% else %}{{ traefik_remote_item_v1 }}{% endif %}'
 traefik_url: '{{ traefik_mirror }}/{{ traefik_ver_fmt }}/{{ traefik_remote_item }}'
 traefik_checksum: '{{ traefik_checksums[traefik_ver_fmt][traefik_platform] }}'

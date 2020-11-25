@@ -1,5 +1,5 @@
 ---
-- name: look for install
+- name: look for install in {{ traefik_install_dir }}
   become: yes
   stat:
     path: '{{ traefik_install_dir }}'
@@ -7,37 +7,37 @@
   register: traefik_binary
 - when: not traefik_binary.stat.exists
   block:
-    - name: download...
+    - name: downloading {{ traefik_url }}
       become: yes
       become_user: root
       get_url:
         url: '{{ traefik_url }}'
-        dest: /tmp/{{ traefik_archive }}
+        dest: '{{ traefik_tmp_archive }}'
         mode: 0644
         checksum: '{{ traefik_checksum }}'
-    - name: mkdir...
+    - name: mkdir {{ traefik_install_dir }}
       become: yes
       become_user: root
       file:
         path: '{{ traefik_install_dir }}'
         state: directory
         mode: 0755
-    - name: unarchive
+    - name: unarchive {{ traefik_tmp_archive }}
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{ traefik_archive }}
+        src: '{{ traefik_tmp_archive }}'
         dest: '{{ traefik_install_dir }}'
         creates: '{{ traefik_target_bin }}'
   always:
-    - name: cleanup
+    - name: rm {{ traefik_tmp_archive }}
       become: yes
       become_user: root
       file:
-        path: /tmp/{{ traefik_archive }}
+        path: '{{ traefik_tmp_archive }}'
         state: absent
-- name: link...
+- name: linking {{ traefik_fq_target_link }} to {{ traefik_target_bin }}
   become: yes
   become_user: root
   file:
