@@ -1,5 +1,5 @@
 ---
-- name: download traefik...
+- name: downloading {{ traefik_url }} to {{ traefik_target_bin }}
   become: yes
   become_user: root
   get_url:
@@ -7,7 +7,7 @@
     dest: '{{ traefik_target_bin }}'
     checksum: '{{ traefik_checksum }}'
     mode: 0755
-- name: link...
+- name: linking {{ traefik_fq_target_link }} to {{ traefik_target_bin }}
   become: yes
   become_user: root
   file:
