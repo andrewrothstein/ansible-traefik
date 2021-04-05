@@ -1,11 +1,12 @@
 ---
 - hosts: all
+  vars:
+    traefik_ver:
+      major: 1
+      minor: 7
+      patch: 17
   roles:
     - role: '{{ playbook_dir }}'
-      traefik_ver:
-        major: 1
-        minor: 7
-        patch: 17
   tasks:
     - command: /usr/local/bin/traefik version
       register: traefik_test_output
