@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 DIR=~/Downloads
 MIRROR=https://github.com/containous/traefik/releases/download
 
@@ -89,4 +90,4 @@ dl_ver() {
     dl_v${major_ver}_ver $ver
 }
 
-dl_ver 2 4 11
+dl_ver 2 4 13
