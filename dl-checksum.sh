@@ -61,7 +61,7 @@ dl_v2_ver() {
 
     if [ ! -e $lchecksums ];
     then
-        wget -q -O $lchecksums $rchecksums
+        curl -sSLf -o $lchecksums $rchecksums
     fi
 
     printf "  # %s\n" $rchecksums
@@ -90,4 +90,4 @@ dl_ver() {
     dl_v${major_ver}_ver $ver
 }
 
-dl_ver 2 5 6
+dl_ver 2 5 7
