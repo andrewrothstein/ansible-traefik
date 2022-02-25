@@ -90,4 +90,4 @@ dl_ver() {
     dl_v${major_ver}_ver $ver
 }
 
-dl_ver 2 5 7
+dl_ver 2 6 1
