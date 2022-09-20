@@ -1,6 +1,7 @@
 ---
 # vars file for traefik
-
+traefik_os: '{{ ansible_system | lower }}'
+traefik_arch: '{{ traefik_arch_map[ansible_architecture] }}'
 traefik_ver_fmt: 'v{{ traefik_ver.major }}.{{ traefik_ver.minor }}.{{ traefik_ver.patch }}'
 traefik_conjuction: '{% if traefik_ver.major | int >= 2 %}_{% else %}-{% endif %}'
 traefik_platform: '{{ traefik_os }}{{ traefik_conjuction }}{{ traefik_arch }}'
