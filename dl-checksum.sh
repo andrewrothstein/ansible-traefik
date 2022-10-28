@@ -72,7 +72,6 @@ dl_v2_ver() {
     dl_v2 $ver $lchecksums linux 386 tar.gz
     dl_v2 $ver $lchecksums linux amd64 tar.gz
     dl_v2 $ver $lchecksums linux arm64 tar.gz
-    dl_v2 $ver $lchecksums linux armv5 tar.gz
     dl_v2 $ver $lchecksums linux armv6 tar.gz
     dl_v2 $ver $lchecksums linux armv7 tar.gz
     dl_v2 $ver $lchecksums linux ppc64le tar.gz
@@ -90,4 +89,4 @@ dl_ver() {
     dl_v${major_ver}_ver $ver
 }
 
-dl_ver 2 8 8
+dl_ver 2 9 4
