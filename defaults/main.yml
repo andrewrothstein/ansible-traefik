@@ -3,7 +3,7 @@
 traefik_ver:
   major: 2
   minor: 9
-  patch: 6
+  patch: 7
 
 traefik_arch_map:
   386: 386
@@ -2212,3 +2212,31 @@ traefik_checksums:
     windows_386: sha256:639f88a9978083e069fa183f1af891893df2c1f175b0eb4366e8ec384b3db9b7
     # https://github.com/traefik/traefik/releases/download/v2.9.6/traefik_v2.9.6_windows_amd64.zip
     windows_amd64: sha256:869d1e57193abfb8e214e8ccbf8296c865e3819db40227391657154d60967a39
+  # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_checksums.txt
+  v2.9.7:
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_darwin_amd64.tar.gz
+    darwin_amd64: sha256:2bec9c2b196e9a6fd987b559894c73b982854a3ab69c5006ffc7da047113dec2
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_freebsd_386.tar.gz
+    freebsd_386: sha256:f9045260904efbeadfe5f60f6616916c924725fa241b243d0b54cf8ad0ae39d9
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_freebsd_amd64.tar.gz
+    freebsd_amd64: sha256:cc0c6b36b18225a406863e41b88d6c861359b7fbfb23d739e76e8ea71624323b
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_linux_386.tar.gz
+    linux_386: sha256:559021f415482a54e7732d1188a7cbce448922bea96463b97eec028b10e9aab1
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_linux_amd64.tar.gz
+    linux_amd64: sha256:897df4e8b240467cfbda6438a0b2505785610511a15ee95399910b54d6b03c15
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_linux_arm64.tar.gz
+    linux_arm64: sha256:2b1383621fb5e4f7cdd2e6e231c992c83bdf3bcc7d4cbee60d327c3057a273bc
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_linux_armv6.tar.gz
+    linux_armv6: sha256:04fc9cf8ff1d8c13d7327bf75fbfbd717424725e12226d666ba8026e252e88f9
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_linux_armv7.tar.gz
+    linux_armv7: sha256:b7106b3e333998d2dfd2da4ef2268ae32ac65c679b054ede3341ed7b918600d8
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:784f3fa42c30b1384a21919b08d8500dce847129060ea8a93417f187196b97ad
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_openbsd_386.tar.gz
+    openbsd_386: sha256:3142eea3747c6830081ede91c30b3120b600514e6e4eb63e79da2695ba6cd7c6
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_openbsd_amd64.tar.gz
+    openbsd_amd64: sha256:aff8985da73c13855dc86301224dbd1af53e6cc64d5a399f078953b6b8d9403f
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_windows_386.zip
+    windows_386: sha256:c8be0dd887e2b9f883e3d5f354570bee0bfc734cea3825c5ad2b1df7c138dfbd
+    # https://github.com/traefik/traefik/releases/download/v2.9.7/traefik_v2.9.7_windows_amd64.zip
+    windows_amd64: sha256:2a405e676a47d376a08e29a08736dba6910f6462e3afffc45d83265765e490ab
