@@ -15,7 +15,7 @@ dl_v1()
     local file=$DIR/traefik_${platform}-${ver}${SUFFIX}
     if [ ! -e $file ];
     then
-        wget -q -O $file $url
+        curl -sSLf -o $file $url
     fi
     printf "    # %s\n" $url
     printf "    %s: sha256:%s\n" $platform `sha256sum $file | awk '{print $1}'`
@@ -89,4 +89,4 @@ dl_ver() {
     dl_v${major_ver}_ver $ver
 }
 
-dl_ver 2 9 10
+dl_ver 2 10 1
