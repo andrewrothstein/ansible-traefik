@@ -23,7 +23,7 @@
   tasks:
     - name: Executing 'traefik version'
       ansible.builtin.command: /usr/local/bin/traefik version
-      changed_when: False
+      changed_when: false
       register: traefik_test2_output
     - name: Output from 'traefik version'
       ansible.builtin.debug:
