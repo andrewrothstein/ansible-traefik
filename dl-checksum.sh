@@ -86,7 +86,12 @@ dl_ver() {
     local minor_ver=$2
     local patch_ver=$3
     local ver=v${major_ver}.${minor_ver}.${patch_ver}
-    dl_v${major_ver}_ver $ver
+    local eff_major_ver="${major_ver}"
+    if [ "${major_ver}" -ge 2 ];
+    then
+        eff_major_ver=2
+    fi;
+    dl_v${eff_major_ver}_ver $ver
 }
 
-dl_ver 2 10 1
+dl_ver 3 0 1

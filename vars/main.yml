@@ -21,6 +21,8 @@ traefik_install_bin_dir: '{{ traefik_parent_install_dir }}/bin'
 traefik_target_bins:
   1: '{{ traefik_install_bin_dir }}/traefik_{{ traefik_platform }}_{{ traefik_ver_fmt }}'
   2: '{{ traefik_install_dir }}/traefik'
+  3: '{{ traefik_install_dir }}/traefik'
 
 traefik_target_bin: '{{ traefik_target_bins[traefik_ver.major] }}'
 traefik_fq_target_link: '{{ traefik_install_bin_dir }}/traefik'
+traefik_install_ver: '{% if traefik_ver.major | int >= 2 %}2{% else %}{{ traefik_ver.major }}{% endif %}'
