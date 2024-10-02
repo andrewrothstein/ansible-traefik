@@ -3,7 +3,7 @@
 traefik_ver:
   major: 3
   minor: 1
-  patch: 3
+  patch: 5
 
 traefik_arch_map:
   386: 386
@@ -2464,3 +2464,59 @@ traefik_checksums:
     windows_386: sha256:d9d82c0428361d139e94166cd072668188b7cfb20feb8ff1b9273ac81437cd6d
     # https://github.com/traefik/traefik/releases/download/v3.1.3/traefik_v3.1.3_windows_amd64.zip
     windows_amd64: sha256:f9be1745858ef7004d644b292b19d1b613630c803ab7af29d69e7316e026c377
+  # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_checksums.txt
+  v3.1.4:
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_darwin_amd64.tar.gz
+    darwin_amd64: sha256:3634d304a433e6e814267cc68b0d20726317bfad617440fa693686272b8a449d
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_freebsd_386.tar.gz
+    freebsd_386: sha256:004939a1f535c791932e81bb6a4f4dfc2032b84240ebd891c4bcd754fc89b2af
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_freebsd_amd64.tar.gz
+    freebsd_amd64: sha256:99d6e2f121d74129cacfa4d49e24d8a33b165f2e01ed7cbcb613b9462d27d07b
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_linux_386.tar.gz
+    linux_386: sha256:2a9c30592bbb5706da77838883c06ae3456a69d836beb4b4359200cc615454ed
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_linux_amd64.tar.gz
+    linux_amd64: sha256:eb7227b1b235195355904839c514a9ed6a0aecdcf5dab02ad48db21b05c5e700
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_linux_arm64.tar.gz
+    linux_arm64: sha256:e5d970a7f11267b70a8e308cb80f859bba4f420f24789f7393fdf3f4cd031631
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_linux_armv6.tar.gz
+    linux_armv6: sha256:3a80b6d5ab200c37174a851ef0f382cf37d63c46072d10c70358dc96dd138a6e
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_linux_armv7.tar.gz
+    linux_armv7: sha256:0b9f8528803ee20feaac94d0f49f922d0340015b07a0e3eaa0a0ece53247321e
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:71cc7966bf4307f8b92006d3bce66e356d7ea068fb3fe3ce05e162a024e6b37a
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_openbsd_386.tar.gz
+    openbsd_386: sha256:6d71d829ca8eba38fa9ad447270f2cd6f5a34e72833c3b6bcc776880a71be7db
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_openbsd_amd64.tar.gz
+    openbsd_amd64: sha256:878a7af0f9aa3244a2b1d182a029aa401af5755fd22d1607e70c87be76b27658
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_windows_386.zip
+    windows_386: sha256:a13abd2b81cae89ce81f83e3542ad0f506fa54ba2b91e6bb9f815da3904efd5f
+    # https://github.com/traefik/traefik/releases/download/v3.1.4/traefik_v3.1.4_windows_amd64.zip
+    windows_amd64: sha256:88c2c55f006342d31ad615ef49e35e3584f443b82b349685ca3f8d66a921737d
+  # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_checksums.txt
+  v3.1.5:
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_darwin_amd64.tar.gz
+    darwin_amd64: sha256:892c9d1133f0357b940c47487f7194b1440921d5ee0a7b73a039b1dc7a45a93f
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_freebsd_386.tar.gz
+    freebsd_386: sha256:7ab9cfe59704a5c01e35079e75b9d3f24f428d95c7dcc98e5ac2ee7f8a25a11b
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_freebsd_amd64.tar.gz
+    freebsd_amd64: sha256:274b262c2e002abe2604c049883b8b06a41ebafe492e45a5be47403d780b76cf
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_linux_386.tar.gz
+    linux_386: sha256:904c2771ed8c0e715c8b408be9181d26f650d0b6c06648f27dab90e1a6661417
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_linux_amd64.tar.gz
+    linux_amd64: sha256:fe2931d0828393510665fe4654d6d59157ff08cc5331fc709b547728bdacf302
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_linux_arm64.tar.gz
+    linux_arm64: sha256:a25b150b98d3387b397a5b7fd86c584125f1f9d3878af10a71272284951f5e40
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_linux_armv6.tar.gz
+    linux_armv6: sha256:b4f516e0c840565c11f19c7406d2a9dde7692c57b3d1795c4f09e206e27d77cc
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_linux_armv7.tar.gz
+    linux_armv7: sha256:76797dbe22c22e559bf833db22a54321446c02713e055835d483360c64e70454
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:3b7f6e24ba4e547f003cf840cc4084e3ea451a58f9d53283946c6e30f442cb3e
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_openbsd_386.tar.gz
+    openbsd_386: sha256:85253099142b5149e68cfd0f19cf1afb519f549165aa137030c0141ff784880c
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_openbsd_amd64.tar.gz
+    openbsd_amd64: sha256:8c1ea58453b4f34dc5f60b70d5214ab5db5d1819148466d80a21ae3137911536
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_windows_386.zip
+    windows_386: sha256:c9dd594689444a862dd4c6aed3b5d00f15b6304bc898802d3f98aadd0743e4a1
+    # https://github.com/traefik/traefik/releases/download/v3.1.5/traefik_v3.1.5_windows_amd64.zip
+    windows_amd64: sha256:aae2f7002f711afe85964ff56770bfe7f93ef7a80ac14791d9ecca1e15766e7b
